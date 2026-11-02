@@ -122,15 +122,15 @@ Cada captura se tomó en dos tamaños: **iPhone 12 Pro** (390 px, el más cercan
 
 | Pantalla | Mobile | Desktop |
 |---|---|---|
-| Inicio / Catálogo | <img src="Capturas/Inicio%28iPhone%2012%20Pro%29.png" alt="Inicio(iPhone 12 Pro)" width="170"> | <img src="Capturas/Inicio%28Desktop%29.png" alt="Inicio(Desktop)" width="420"> |
-| Cotizar (Paso 1) | <img src="Capturas/Datos%20Celular%28iPhone%2012%20Pro%29.png" alt="Datos Celular(iPhone 12 Pro)" width="170"> | <img src="Capturas/Datos%20Celular%28Desktop%29.png" alt="Datos Celular(Desktop)" width="420"> |
-| Elegir plan (Paso 2) | <img src="Capturas/Plan%28iPhone%2012%20Pro%29.png" alt="Plan(iPhone 12 Pro)" width="170"> | <img src="Capturas/Planes%20%28Desktop%29.png" alt="Planes (Desktop)" width="420"> |
-| Datos personales con error (Paso 3) | <img src="Capturas/Correo%20incompleto%28iPhone%2012%20Pro%29.png" alt="Correo incompleto(iPhone 12 Pro)" width="170"> | <img src="Capturas/Correo%20Incompleto%20%28Desktop%29.png" alt="Correo Incompleto (Desktop)" width="420"> |
-| Datos personales válidos (Paso 3) | <img src="Capturas/Correo%20completo%28iPhone%2012%20Pro%29.png" alt="Correo completo(iPhone 12 Pro)" width="170"> | <img src="Capturas/Correo%20completo%28Desktop%29.png" alt="Correo completo(Desktop)" width="420"> |
-| Pago (Paso 4) | <img src="Capturas/Pago%28iPhone%2012%20Pro%29.png" alt="Pago(iPhone 12 Pro)" width="170"> | <img src="Capturas/Pago%20%28Desktop%29.png" alt="Pago (Desktop)" width="420"> |
-| Pago con la tarjeta de rechazo | <img src="Capturas/Pago2%28iPhone%2012%20Pro%29.png" alt="Pago2(iPhone 12 Pro)" width="170"> | <img src="Capturas/Pago2%28Desktop%29.png" alt="Pago2(Desktop)" width="420"> |
-| Error de pago | <img src="Capturas/Error%28iPhone%2012%20Pro%29.png" alt="Error(iPhone 12 Pro)" width="170"> | <img src="Capturas/Error%28Desktop%29.png" alt="Error(Desktop)" width="420"> |
-| Éxito | <img src="Capturas/Exito%28iPhone%2012%20Pro%29.png" alt="Exito(iPhone 12 Pro)" width="170"> | <img src="Capturas/Exito%20%28Desktop%29.png" alt="Exito (Desktop)" width="420"> |
+| Inicio / Catálogo | <img src="Capturas/Inicio%28iPhone%2012%20Pro%29.png" alt="Inicio(iPhone 12 Pro)" width="170"> | <img src="Capturas/Inicio (Desktop).png" alt="Inicio(Desktop)" width="420"> |
+| Cotizar (Paso 1) | <img src="Capturas/Datos%20Celular%28iPhone%2012%20Pro%29.png" alt="Datos Celular(iPhone 12 Pro)" width="170"> | <img src="Capturas/Datos del celular (Desktop).png" alt="Datos Celular (Desktop)" width="420"> |
+| Elegir plan (Paso 2) | <img src="Capturas/Plan%28iPhone%2012%20Pro%29.png" alt="Plan(iPhone 12 Pro)" width="170"> | <img src="Capturas/Planes (Desktop).png" alt="Planes (Desktop)" width="420"> |
+| Datos personales con error (Paso 3) | <img src="Capturas/Correo%20incompleto%28iPhone%2012%20Pro%29.png" alt="Correo incompleto(iPhone 12 Pro)" width="170"> | <img src="Capturas/Correo Incompleto (Desktop).png" alt="Correo Incompleto (Desktop)" width="420"> |
+| Datos personales válidos (Paso 3) | <img src="Capturas/Correo%20completo%28iPhone%2012%20Pro%29.png" alt="Correo completo (iPhone 12 Pro)" width="170"> | <img src="Capturas/Correo Completo (Desktop).png" alt="Correo completo (Desktop)" width="420"> |
+| Pago (Paso 4) | <img src="Capturas/Pago%28iPhone%2012%20Pro%29.png" alt="Pago (iPhone 12 Pro)" width="170"> | <img src="Capturas/Pago 1 (Desktop).png" alt="Pago (Desktop)" width="420"> |
+| Pago con la tarjeta de rechazo | <img src="Capturas/Pago2%28iPhone%2012%20Pro%29.png" alt="Pago2(iPhone 12 Pro)" width="170"> | <img src="Capturas/Pago 2 (Desktop).png" alt="Pago2(Desktop)" width="420"> |
+| Error de pago | <img src="Capturas/Error%28iPhone%2012%20Pro%29.png" alt="Error(iPhone 12 Pro)" width="170"> | <img src="Capturas/Error (Desktop).png" alt="Error (Desktop)" width="420"> |
+| Éxito | <img src="Capturas/Exito%28iPhone%2012%20Pro%29.png" alt="Exito (iPhone 12 Pro)" width="170"> | <img src="Capturas/Exito (Desktop).png" alt="Exito (Desktop)" width="420"> |
 
 ## Autor
 
