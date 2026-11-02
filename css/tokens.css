@@ -1,0 +1,99 @@
+:root {
+  --primary: #4F46E5; /* indigo-600 */
+  --primary-foreground: #FFFFFF;
+  --radius: 0.75rem;
+
+  --cs-primary-700: #3730A3;
+  --cs-primary-50: #EEF2FF;
+  --cs-success: #059669;
+  --cs-error: #DC2626;
+  --cs-text: #0F172A;
+  --cs-muted: #64748B;
+  --cs-border: #E2E8F0;
+  --cs-bg: #F5F7FB;
+}
+
+body { font-family: 'Inter', system-ui, sans-serif; background: var(--cs-bg); color: var(--cs-text); }
+
+/* Tipografía: H2 24/800 · lead 15/400 · label 13/600 · help 12/400 */
+.card > header h2 { font-size: 24px; font-weight: 800; }
+.lead { font-size: 15px; font-weight: 400; color: var(--cs-muted); }
+.field label { font-size: 13px; font-weight: 600; }
+.field p { font-size: 12px; font-weight: 400; }
+
+/* Botones (Figma: 46 px de alto, radio 12, texto 700) */
+.btn { min-height: 46px; border-radius: var(--radius); font-weight: 700; }
+.btn[data-variant="outline"] { background: #fff; color: var(--primary); border: 1.5px solid var(--primary); }
+.btn[data-variant="ghost"] { color: var(--primary); }
+.btn:not([data-variant]):disabled { background: #CBD5E1; color: #fff; opacity: 1; }
+
+/* Inputs: default, focus, error */
+.field :is(input:not([type="checkbox"]), select) { min-height: 44px; border-radius: var(--radius); background: #fff; }
+.field :is(input, select):focus-visible { border-color: var(--primary); box-shadow: 0 0 0 1px var(--primary); }
+.field[data-invalid] :is(input:not([type="checkbox"]), select) { border-color: var(--cs-error); background: #FEF2F2; }
+.field[data-invalid] p[role="alert"] { color: var(--cs-error); }
+
+/* Chips de antigüedad (píldoras) */
+.chip { position: relative; cursor: pointer; }
+.chip input { position: absolute; opacity: 0; }
+.chip span { display: block; padding: .4rem .9rem; border: 1px solid var(--cs-border); border-radius: 9999px; background: #fff; font-size: 13px; font-weight: 500; }
+.chip input:checked + span { border-color: var(--primary); background: var(--cs-primary-50); color: var(--cs-primary-700); font-weight: 600; }
+.chip input:focus-visible + span { outline: 2px solid var(--primary); outline-offset: 2px; }
+.field[data-invalid] .chip span { border-color: var(--cs-error); }
+
+/* Medio de pago: opciones de ancho completo con radio a la izquierda */
+.opcion span { display: flex; align-items: center; gap: .7rem; padding: .9rem 1rem; border-radius: var(--radius); font-size: 14px; font-weight: 600; color: var(--cs-text); }
+.opcion span::before { content: ''; width: 18px; height: 18px; border-radius: 50%; border: 2px solid #CBD5E1; background: #fff; }
+.opcion input:checked + span { background: #fff; border: 2px solid var(--primary); color: var(--cs-text); }
+.opcion input:checked + span::before { border: 5px solid var(--primary); }
+
+/* Cards de plan: toda la card es clickeable */
+.plan input { position: absolute; opacity: 0; }
+.plan .card { padding-block: 1rem; background: #fff; }
+.plan input:checked + .card { border-color: var(--primary); box-shadow: 0 0 0 1px var(--primary); }
+.plan input:focus-visible + .card { outline: 2px solid var(--primary); outline-offset: 2px; }
+.plan .ind { position: absolute; top: 1rem; right: 1rem; width: 18px; height: 18px; border-radius: 50%; border: 2px solid #CBD5E1; }
+.plan input:checked + .card .ind { border: 5px solid var(--primary); }
+
+/* Aviso amarillo (simulación / tarjeta de prueba) */
+.alert-warn { background: #FFFBEB; color: #92400E; border: 0; font-size: 12px; }
+.alert-warn * { color: inherit; }
+
+/* Mobile: footer fijo abajo y formularios sin card (como en el Figma) */
+@media (max-width: 1023px) {
+  footer.pie { position: fixed; inset: auto 0 0 0; z-index: 20; background: #fff; border-top: 1px solid var(--cs-border); padding: 1rem; }
+  [data-paso="2"] footer.pie { border-top: 0; } /* la línea la pone la barra de resumen */
+  [data-paso] > form.card { border: 0; background: transparent; box-shadow: none; padding: 0; }
+  [data-paso] > form.card > :is(header, section) { padding-inline: 0; }
+}
+/* Footer fijo abajo en mobile (el botón principal del Figma) */
+@media (max-width: 1023px) {
+  .pie { position: fixed; inset: auto 0 0 0; z-index: 20; background: #fff; border-top: 1px solid var(--cs-border); padding: 1rem; }
+}
+
+/* Radio de las cards de plan (arriba a la derecha) */
+.plan .ind { position: absolute; top: 1rem; right: 1rem; width: 18px; height: 18px; border-radius: 50%; border: 2px solid #CBD5E1; }
+.plan input:checked + .card .ind { border: 5px solid var(--primary); }
+
+/* Medio de pago: opciones de ancho completo con radio a la izquierda */
+.opcion span { display: flex; align-items: center; gap: .6rem; }
+.opcion span::before { content: ''; width: 16px; height: 16px; border-radius: 50%; border: 2px solid #CBD5E1; }
+.opcion input:checked + span::before { border: 5px solid var(--primary); }
+
+/* Íconos: cada <span class="icono i-nombre"> usa icons/nombre.svg como máscara,
+   así toma el color del texto (text-white, text-emerald-600, etc.).
+   El tamaño se pone con clases de Tailwind (size-4, size-5...). */
+.icono { display: inline-block; flex-shrink: 0; background-color: currentColor;
+  -webkit-mask: var(--icono) center / contain no-repeat; mask: var(--icono) center / contain no-repeat; }
+.i-escudo   { --icono: url('../icons/escudo.svg'); }
+.i-celular  { --icono: url('../icons/celular.svg'); }
+.i-hogar    { --icono: url('../icons/hogar.svg'); }
+.i-bicicleta{ --icono: url('../icons/bicicleta.svg'); }
+.i-avion    { --icono: url('../icons/avion.svg'); }
+.i-check    { --icono: url('../icons/check.svg'); }
+.i-x        { --icono: url('../icons/x.svg'); }
+
+/* Medio de pago: Basecoat dibuja su propio recuadro en .field > label con radio;
+   lo anulamos porque el recuadro de la opción es el <span> (evita el doble borde). */
+.field > label.opcion,
+.field > label.opcion:has(input:checked) { border: 0; background: transparent; padding: 0; }
