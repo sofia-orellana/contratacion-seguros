@@ -2,7 +2,7 @@
 
 Trabajo Práctico de **Diseño UX/UI 2026** · Licenciatura en Sistemas de Información · FCyT, Sede Concepción del Uruguay.
 
-- **Sitio publicado:** 
+- **Sitio publicado:** https://tp5-uiux.netlify.app/
 - **Repositorio:** https://github.com/sofia-orellana/contratacion-seguros
 
 ## Qué es
